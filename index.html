@@ -42,6 +42,30 @@
         <img src="images/data_dictionary.png" alt="Data dictionary table showing column names, data types, and descriptions.">
         <figcaption>Table 1: Data Dictionary</figcaption>
       </figure>
+      <!-- Table 1: Data Dictionary -->
+      
+      <p><strong>Table 1:</strong> Data Dictionary</p>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Column</th>
+            <th>Type</th>
+            <th>Source</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>game_title</td><td>Text</td><td>Both</td><td>Title of game</td></tr>
+          <tr><td>platform</td><td>Text</td><td>Both</td><td>Abbreviation of the video game console used to play the game</td></tr>
+          <tr><td>publisher</td><td>Text</td><td>VGChartz</td><td>The publisher of the video game</td></tr>
+          <tr><td>na_sales</td><td>Numeric</td><td>VGChartz</td><td>The number of units sold in North America</td></tr>
+          <tr><td>total_sales</td><td>Numeric</td><td>VGChartz</td><td>The total number of units sold worldwide</td></tr>
+          <tr><td>summary</td><td>Text</td><td>Metacritic</td><td>A description of the video game</td></tr>
+          <tr><td>release_date</td><td>Date</td><td>Both</td><td>The month and year that the game was released</td></tr>
+          <tr><td>meta_score</td><td>Numeric</td><td>Metacritic</td><td>The review score as decided on by game critics</td></tr>
+          <tr><td>user_score</td><td>Numeric</td><td>Metacritic</td><td>The review score as decided on by the users of Metacritic</td></tr>
+        </tbody>
+      </table>
 
       <!-- Figure 1 -->
       <figure>
@@ -71,6 +95,28 @@
     <!-- Analysis Section -->
     <section id="analysis">
       <h2>3. Analysis</h2>
+    <!-- Table 2: Slice Max Summary -->
+    
+    <p><strong>Table 2:</strong> Slice Max Summary</p>
+    <table border="1">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Publisher</th>
+          <th>Total Sales</th>
+          <th>NA Sales</th>
+          <th>User Score</th>
+          <th>Meta Score</th>
+          <th>Number of Games</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Nintendo</td><td>1,915,460,000</td><td>859,150,000</td><td>7.86</td><td>77.39</td><td>1410</td></tr>
+        <tr><td>2</td><td>Activision</td><td>727,710,000</td><td>428,300,000</td><td>6.80</td><td>70.96</td><td>1567</td></tr>
+        <tr><td>3</td><td>Electronic Arts</td><td>659,150,000</td><td>329,130,000</td><td>6.94</td><td>73.82</td><td>1591</td></tr>
+        <tr><td>4</td><td>Sony Computer Entertainment</td><td>557,090,000</td><td>239,880,000</td><td>7.55</td><td>74.98</td><td>1365</td></tr>
+      </tbody>
+    </table>
 
     <!-- Table 2 -->
       <p><strong>Table 2:</strong> Slice Max Summary</p>
@@ -110,6 +156,25 @@
         <figcaption>Table 3: Top Publishers by North American Sales vs. Total Sales</figcaption>
       </figure>
     </section>
+
+          <!-- Table 3: Top Publishers by Sales -->
+      <p><strong>Table 3:</strong> Top Publishers by North American and Total Sales</p>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>North American Games Sold</th>
+            <th>Total Games Sold</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Nintendo</td><td>Nintendo</td></tr>
+          <tr><td>2</td><td>Activision</td><td>Activision</td></tr>
+          <tr><td>3</td><td>Electronic Arts</td><td>Electronic Arts</td></tr>
+          <tr><td>4</td><td>EA Sports</td><td>Sony Computer Entertainment</td></tr>
+          <tr><td>5</td><td>Ubisoft</td><td>Ubisoft</td></tr>
+        </tbody>
+      </table>
 
 
       <h3>3.1 Correlation Between Review Scores and Sales</h3>
